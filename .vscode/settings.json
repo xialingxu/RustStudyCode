@@ -4,6 +4,7 @@
         ".\\ch16\\Cargo.toml",
         ".\\ch17\\Cargo.toml",
         ".\\ch17_blog\\Cargo.toml",
-        ".\\ch18\\Cargo.toml"
+        ".\\ch18\\Cargo.toml",
+        ".\\ch19\\Cargo.toml"
     ]
 }
