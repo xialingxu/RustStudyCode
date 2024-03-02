@@ -5,6 +5,8 @@
         ".\\ch17\\Cargo.toml",
         ".\\ch17_blog\\Cargo.toml",
         ".\\ch18\\Cargo.toml",
-        ".\\ch19\\Cargo.toml"
+        ".\\ch19\\Cargo.toml",
+        ".\\hello_macro\\Cargo.toml",
+        ".\\hello_macro_derive\\Cargo.toml"
     ]
 }

@@ -1,6 +1,11 @@
 use core::num;
 use std::fmt::Display;
 use std::ops::Add;
+use ch19::my_macro;
+use hello_macro::HelloMacro; //导入trait，这个不能少
+use hello_macro_derive::HelloMacro;
+
+
 
 trait Pilot {
     fn fly(&self);
@@ -31,6 +36,9 @@ struct Wrapper(Vec<String>);
 struct Dog;
 
 struct Human;
+
+#[derive(HelloMacro)]
+struct Pancakes;
 
 extern "C" {
     // 这个函数是C语言的标准库中的函数
@@ -194,6 +202,15 @@ fn main() {
     //returns_closure返回的是一个闭包!!!
     let test=returns_closure();
     println!("{}",test(10));
+    /////////////////////////宏定义/////////////////////////////////////////
+    
+    my_macro!("{},{}","hello","xxl");
+
+    println!(stringify!(1+2));
+
+    //利用过程宏实现
+    Pancakes::hello_macro();
+
 }
 
 fn add_one(x: i32) -> i32 {
